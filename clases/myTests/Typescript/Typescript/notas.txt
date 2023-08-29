@@ -1,0 +1,16 @@
+npm init -y
+npm i typescript nodemon ts-node
+touch index.ts //Creando nuevo archivo ts
+
+//npx tsc index.tx         COMPILA EL ARCHIVO TS Y GENERA UNO .JS PARA SU EJECUCIONNPM  
+
+// npx tsc --init para generar el archivo tsconfig.json que es donde se configura el TS
+
+agregar en el package.json: 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.ts",
+    "build": "tsc"
+  },
+
+  npm run dev para que cada vez que se actualice el archivo index.ts se compile
